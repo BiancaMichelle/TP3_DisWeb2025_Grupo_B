@@ -3,11 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP3</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description"
+        content="Blog sobre la historia y recomendaciones de Atlus, una desarrolladora de videojuegos japonesa.">
+    <meta name="author" content="GRUPO B">
+    <title>Historia y Recomendaciones de Atlus</title>
+    <link rel="stylesheet" href="./style.css">
     <script src="script.js"></script>
 </head>
 <body>
-    
+
+    <!-- Encabezado con logo y título -->
+    <header>
+        <div>
+            <a href="https://atlus.com/" title="Ir al sitio oficial de Atlus">
+                <img id="Logo" src="./img/Atlus_logo.png" alt="Logo de Atlus">
+            </a>
+            <h1 style="margin: 10px 0;">Historia y Recomendaciones de Atlus</h1>
+        </div>
+        <nav>
+            <ul class="barraNav">
+                <li><a class="NavIntLink" href="#historia">Historia</a></li>
+                <li><a class="NavIntLink" href="#recomendaciones">Recomendaciones</a></li>
+                <li><a class="NavIntLink" href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Barra lateral -->
+        <aside>
+            <h3>Enlaces rápidos</h3>
+            <ul class="enlaces">
+                <li><a class="SideBarLink" href="#historia">Historia
+                        <img id="hist_logo" src="./img/Atlus_logo.png">
+                    </a></li>
+                <li><a class="SideBarLink" href="#recomendaciones">Recomendaciones
+                        <img id="recom_logo" src="./img/jack.png.png">
+                    </a></li>
+                <li><a class="SideBarLink" href="#contacto">Contacto
+                        <img id="cont_logo" src="./img/contacto.png">
+                    </a></li>
+            </ul>
+            <h3>Redes sociales</h3>
+            <ul class="enlaces">
+                <li><a class="SocialLink" href="https://twitter.com/atlus" target="_blank"><img
+                            src="./img/twit_logo.png" id="twit_logo"></a></li>
+                <li><a class="SocialLink" href="https://facebook.com/atlus" target="_blank"><img
+                            src="./img/face_logo.png" id="face_logo"></a></li>
+                <li><a class="SocialLink" href="https://instagram.com/atlus" target="_blank"><img
+                            src="./img/insta_logo.png" id="insta_logo"></a></li>
+            </ul>
+        </aside>
+
+        <!-- Sección de historia -->
+        <section class="secciones" id="historia">
+            <h2>Historia de la empresa</h2>
+            <article>
+                <p>Atlus Co., Ltd. es una desarrolladora de videojuegos japonesa ubicada en Tokio, filial de SEGA. Son
+                    conocidos por desarrollar franquicias icónicas como Shin Megami Tensei, Persona, Etrian Odyssey,
+                    entre otros. La mascota de la empresa es "Jack Frost", un personaje recurrente en sus juegos.</p>
+                <p>La compañía fue fundada en abril de 1986 y operó de manera independiente hasta 2010, cuando fue
+                    adquirida por Index Holdings. En 2013, tras la bancarrota de Index Corporation, SEGA adquirió Atlus
+                    y la renombró como Sega Dream Corporation. Actualmente, Atlus cuenta con dos filiales principales:
+                    P-Studio, responsable de la franquicia Persona, y Studio Zero, enfocado en nuevos proyectos.</p>
+                <p>Atlus ha sido reconocida por su enfoque en historias profundas, personajes complejos y mecánicas de
+                    juego innovadoras. Sus títulos han ganado múltiples premios y han sido aclamados tanto por críticos
+                    como por jugadores.</p>
+                <p>En 2017, Atlus expandió su alcance global al establecer una división dedicada a la publicación de
+                    juegos en regiones PAL, permitiendo que títulos como Persona 5 y Catherine llegaran a una audiencia
+                    más amplia. Además, la compañía ha colaborado con otras editoras como Deep Silver y NIS America para
+                    distribuir sus juegos en mercados internacionales.</p>
+                <p>En los últimos años, Atlus ha explorado nuevas plataformas, lanzando versiones de sus juegos en PC,
+                    Nintendo Switch y consolas de nueva generación, lo que ha fortalecido su posición como una de las
+                    desarrolladoras más influyentes en la industria de los videojuegos.</p>
+            </article>
+        </section>
+
+        <!-- Sección de recomendaciones -->
+        <section class="secciones" id="recomendaciones">
+            <h2>Nuestras recomendaciones</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="titulo">Título del juego</th>
+                        <th class="titulo">Sinopsis</th>
+                        <th class="titulo">Fecha de salida</th>
+                        <th class="titulo">Calificación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="celda">Persona 5 Royal</td>
+                        <td class="celda">Un grupo de jóvenes enfrenta fuerzas oscuras con el poder de las Personas en
+                            Tokio.</td>
+                        <td class="celda">31 de marzo de 2020</td>
+                        <td class="celda">★★★★★</td>
+                    </tr>
+                    <tr>
+                        <td class="celda">Shin Megami Tensei V</td>
+                        <td class="celda">Un estudiante se encuentra atrapado en un Tokio postapocalíptico lleno de
+                            demonios.</td>
+                        <td class="celda">12 de noviembre de 2021</td>
+                        <td class="celda">★★★★☆</td>
+                    </tr>
+                    <tr>
+                        <td class="celda">Catherine: Full Body</td>
+                        <td class="celda">Un juego de puzzles y drama romántico que explora las relaciones y la toma de
+                            decisiones.</td>
+                        <td class="celda">3 de septiembre de 2019</td>
+                        <td class="celda">★★★★☆</td>
+                    </tr>
+                    <tr>
+                        <td class="celda">Megami Tensei</td>
+                        <td class="celda">Un estudiante de secundaria que crea un programa informático capaz de invocar
+                            demonios al mundo real. Sin embargo, su experimento sale mal, desatando el caos cuando los
+                            demonios comienzan a invadir Tokio.</td>
+                        <td class="celda">5 de abril de 1987</td>
+                        <td class="celda">★★☆☆☆</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer id="contacto">
+        <p>Contacto: info@atlus.com</p>
+        <p>Teléfono: +81-3-1234-5678</p>
+        <p>Dirección: 1-2-3 Shibuya, Tokio, Japón</p>
+        <p>© 2025 Atlus Blog. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>

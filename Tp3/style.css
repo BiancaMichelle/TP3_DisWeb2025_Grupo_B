@@ -1,0 +1,115 @@
+.NavIntLink{
+    color: white;
+    text-decoration: none;
+}
+
+.SocialLink{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.SideBarLink{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+#Logo{
+    width: 150px;
+}
+
+#hist_logo{
+    width: 250px;
+}
+
+#recom_logo{
+    width: 200px;
+}
+
+#cont_logo{
+    width: 100px;
+    display: flex;
+}
+
+#twit_logo{
+    height: 30px;
+    width: 30px;
+}
+
+#insta_logo{
+    height: 30px;
+    width: 30px;
+}
+
+#face_logo{
+    height: 30px;
+    width: 30px;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0; padding: 0;
+    background-image: url(./img/jack_bg.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+} 
+aside{
+    padding: 10px;
+    float: left;
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.664);
+    color: black;
+}
+.secciones{
+    margin-left: 22%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+}
+.titulo{
+    border: 1px solid white;
+    padding: 5px;
+}
+.celda{
+    border: 1px solid white;
+    padding: 5px;
+}
+table{
+    padding: auto;
+    width: 100%;
+    border: 1px solid white;
+    border-collapse: collapse;
+    color: white;
+}
+footer{
+    background-color: rgb(34, 34, 34);
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.enlaces{
+    list-style: none;
+    padding: 0;
+}
+.barraNav{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+main{
+    padding: 20px;
+}
+h2:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+}
