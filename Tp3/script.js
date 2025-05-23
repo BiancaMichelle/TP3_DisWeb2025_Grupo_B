@@ -4,6 +4,7 @@ const boton = document.getElementById("boton");
 
 // Calculadora de descuentos
 document.addEventListener("DOMContentLoaded", function() {
+    // --- Código original ---
     const formDescuento = document.getElementById("form-descuento");
     const selectJuego = document.getElementById("juego");
     const inputPorcentaje = document.getElementById("porcentaje");
@@ -18,12 +19,53 @@ document.addEventListener("DOMContentLoaded", function() {
             resultadoDiv.textContent = `Precio final de "${selectJuego.value}" con ${porcentaje}% de descuento: $${precioFinal.toFixed(2)} USD`;
         });
     }
+
+    // --- Código nuevo mergeado ---
+    // Primera parte: contador de caracteres en textarea
+    const textarea = document.getElementById('miTextarea');
+    const contador = document.getElementById('contador');
+
+    if (textarea && contador) {
+        textarea.addEventListener('input', () => {
+            const longitud = textarea.value.length;
+            contador.textContent = `${longitud} caracter${longitud !== 1 ? 'es' : ''}`;
+        });
+    }
+
+    // Segunda parte: cambio de color en caja
+    const elemento = document.getElementById('caja');
+    if (elemento) {
+        elemento.addEventListener('mouseover', () => {
+            elemento.style.backgroundColor = 'blue';
+        });
+
+        elemento.addEventListener('mouseout', () => {
+            elemento.style.backgroundColor = 'rgb(209, 204, 204)';
+        });
+    }
+});
+
+// Punto 2: Función que retorne el mensaje
+function generarMensaje(nombre, asunto) {
+    return `Gracias ${nombre} por contactarnos sobre ${asunto}. Te responderemos pronto.`;
+}
+
+// Asociar el envío del formulario a la función
+document.getElementById("formulario").addEventListener("submit", function(event) {
+    event.preventDefault();
+    // Obtener valores del formulario
+    const nombre = document.getElementById("nombre").value;
+    const asunto = document.getElementById("asunto").value;
+    // Llamar a la función y mostrar el mensaje en consola
+    const mensaje = generarMensaje(nombre, asunto);
+    console.log(mensaje);
+    // alert(mensaje); para despues mostrar en pantalla
+    this.reset();
 });
 
 function calcularDescuento(precio, porcentaje) {
     return precio - (precio * porcentaje / 100);
 }
-
 
 function manejarClickBoton() {
     alert("¡Hiciste clic!");

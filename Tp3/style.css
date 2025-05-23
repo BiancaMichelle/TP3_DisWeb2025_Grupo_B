@@ -121,6 +121,18 @@ h2:hover {
     margin: auto;
     align-items: center;
 }
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    background-color: #e0e0e0; /* gris clarito */
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: black;
+    font-size: 1em;
+}
 .Enviar{
     background-color: rgb(0, 0, 0);
     color: white;
@@ -142,4 +154,17 @@ h2:hover {
 #resultado-descuento {
     text-align: center;
     width: 100%;
+}
+
+textarea#miTextarea {
+    background-color: bisque;
+}
+#contador {
+    color: black;
+}
+.caja {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(209, 204, 204);
+    margin: 0 auto 20px auto;
 }
