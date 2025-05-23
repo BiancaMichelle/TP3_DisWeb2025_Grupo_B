@@ -40,18 +40,24 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-function generarMensaje(nombre, asunto) {
-    return `Gracias ${nombre} por contactarnos sobre ${asunto}. Te responderemos pronto.`;
-}
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("formulario").addEventListener("submit", function (event) {
+        event.preventDefault();
 
-document.getElementById("formulario").addEventListener("submit", function(event) {
-    event.preventDefault();
-    const nombre = document.getElementById("nombre").value;
-    const asunto = document.getElementById("asunto").value;
-    const mensaje = generarMensaje(nombre, asunto);
-    console.log(mensaje);
-    this.reset();
+        const nombre = document.getElementById("nombre").value;
+        const asunto = document.getElementById("asunto").value;
+
+        const mensaje = generarMensaje(nombre, asunto);
+        console.log(mensaje);
+
+        this.reset();
+    });
+
+    function generarMensaje(nombre, asunto) {
+        return `Gracias ${nombre} por contactarnos sobre ${asunto}. Te responderemos pronto.`;
+    }
 });
+
 
 function calcularDescuento(precio, porcentaje) {
     return precio - (precio * porcentaje / 100);
