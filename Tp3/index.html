@@ -137,6 +137,25 @@
                 <button id="boton" class="Enviar" type="submit">Confirmar</button>
             </form>
         </section>
+        <!-- Apartado de cálculo de descuentos -->
+        <section class="secciones" id="descuentos">
+            <h2>Calculadora de descuentos de juegos (Steam Spring Sale)</h2>
+            <form id="form-descuento" class="formulario">
+                <label for="juego">Juego:</label>
+                <select id="juego" name="juego" required>
+                    <option value="Persona 5 Royal" data-precio="60">Persona 5 Royal ($60)</option>
+                    <option value="Shin Megami Tensei V" data-precio="50">Shin Megami Tensei V ($50)</option>
+                    <option value="Catherine: Full Body" data-precio="40">Catherine: Full Body ($40)</option>
+                    <option value="Megami Tensei" data-precio="20">Megami Tensei ($20)</option>
+                </select>
+
+                <label for="porcentaje">Porcentaje de descuento (%):</label>
+                <input type="number" id="porcentaje" name="porcentaje" min="1" max="100" value="20" required>
+
+                <button type="submit" class="Enviar">Calcular precio final</button>
+            </form>
+            <div id="resultado-descuento" style="margin-top:10px; font-weight:bold;"></div>
+        </section>
     </main>
 
     <!-- Pie de página -->
