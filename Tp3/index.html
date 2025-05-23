@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,10 @@
     <meta name="author" content="GRUPO B">
     <title>Historia y Recomendaciones de Atlus</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+
 </head>
+
 <body>
 
     <!-- Encabezado con logo y título -->
@@ -126,19 +129,30 @@
             </table>
         </section>
         <section class="secciones">
-            <h2>Registrarse para recibir Promociones y recomendaciones</h2>
+            <h2>Registrarse para recibir promociones y recomendaciones</h2>
             <form class="formulario" id="formulario">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
 
-                <label for="email">Email:</label>
+                <label for="email">Correo electrónico:</label>
                 <input type="email" id="email" name="email" required>
 
-                <button id="boton" class="Enviar" type="submit">Confirmar</button>
+                <label for="asunto">Asunto:</label>
+                <select id="asunto" name="asunto" required>
+                    <option value="" disabled selected>Selecciona un asunto</option>
+                    <option value="promociones">Promociones</option>
+                    <option value="recomendaciones">Recomendaciones</option>
+                    <option value="consultas">Consultas generales</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button id="boton" class="Enviar" type="submit">Enviar</button>
             </form>
         </section>
     </main>
-
+ 
     <!-- Pie de página -->
     <footer id="contacto">
         <p>Contacto: info@atlus.com</p>
@@ -148,4 +162,5 @@
     </footer>
 
 </body>
+
 </html>
