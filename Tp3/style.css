@@ -1,7 +1,7 @@
 .NavIntLink{
     color: white;
     text-decoration: none;
-}
+} 
 
 .SocialLink{
     color: rgb(0, 0, 0);
@@ -139,7 +139,22 @@ h2:hover {
     border-color: rgb(109, 136, 255);
     box-shadow: 0 0 10px 2px rgb(45, 28, 124), 0 0 20px 4px rgb(62, 52, 153);
 }
+<<<<<<< HEAD
 #resultado-descuento {
     text-align: center;
     width: 100%;
+=======
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    background-color: #e0e0e0; /* gris clarito */
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: black;
+    font-size: 1em;
+>>>>>>> form
 }
